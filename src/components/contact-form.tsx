@@ -94,7 +94,7 @@ export default function ContactForm() {
           Email
           <input
             required
-            type="email"
+            type="email" 
             name="email"
             value={values.email}
             onChange={(event) => setValues((prev) => ({ ...prev, email: event.target.value }))}
