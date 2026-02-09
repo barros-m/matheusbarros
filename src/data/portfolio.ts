@@ -21,12 +21,12 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/mattheusbarroos/",
   website: "https://www.matheusbarros.dev/",
   summary:
-    "Senior Software Engineer with 5+ years of experience and a Master's in Computer Science. Data-oriented full-stack builder focused on scalable systems, cloud architecture, and high-impact ETL workflows."
+    "Senior Software Engineer with 6 years of experience and a Master's in Computer Science. Data-oriented full-stack builder focused on scalable systems, cloud architecture, and high-impact ETL workflows."
 };
 
 export const metrics: Metric[] = [
   {
-    value: "5+",
+    value: "6",
     label: "Years of Experience",
     detail: "Delivering full-stack products from architecture to production."
   },
@@ -54,11 +54,13 @@ export const experience: Experience[] = [
     location: "Miami, FL",
     period: "June 2022 - Present",
     highlights: [
-      "Built a real-time dashboard with Django, React, and PostgreSQL processing millions of rows for traffic insights.",
-      "Led development of a Capital Plan Management System using C#/.NET, Entity Framework, MSSQL, and React.",
-      "Implemented secure REST APIs and modern Angular UI for a custom Work Order System; mentored junior engineers.",
-      "Designed Azure cloud infrastructure and automated CI/CD, improving reliability and deployment speed.",
-      "Automated multi-source ETL pipelines in Python + Azure Data Factory, cutting client reporting time by 95%."
+      "Led high-impact full-stack delivery using C#/.NET, Entity Framework, React, Angular, SQL, and Azure across multiple enterprise products.",
+      "Designed and implemented secure .NET APIs, complex SQL data models, and responsive React/Angular frontends for operational systems.",
+      "Built a real-time data dashboard with React, Django, and PostgreSQL to process millions of traffic records with production reliability.",
+      "Architected Azure cloud infrastructure and CI/CD pipelines to improve system availability, security posture, and deployment speed.",
+      "Used AI-assisted workflows to accelerate coding, debugging, documentation, and code review cycles, increasing team productivity.",
+      "Collaborated with multiple cross-functional teams in hybrid, in-person, and fully remote settings while mentoring junior developers.",
+      "Automated multi-source ETL pipelines with Python + Azure Data Factory, reducing client reporting turnaround time by 95%."
     ]
   },
   {
@@ -93,7 +95,8 @@ export const education = [
 export const certifications = [
   "Microsoft Azure Cloud Fundamentals (2024)",
   "Microsoft Artificial Intelligence Fundamentals (2025)",
-  "Google Agile Fundamentals (2024)"
+  "Google Agile Fundamentals (2024)",
+  "Docker Foundations Professional Certificate (2026)"
 ];
 
 export const publication =

@@ -118,7 +118,7 @@ export default function HomePage() {
           </article>
 
           <article className={`${sectionCard} animate-fade-up`} style={{ animationDelay: "620ms" }}>
-            <h2 className="font-display text-2xl font-semibold text-zinc-50">Education & Growth</h2>
+            <h2 className="font-display text-2xl font-semibold text-zinc-50">Education & Continuous Learning</h2>
             <div className="mt-5 space-y-4">
               {education.map((item) => (
                 <div key={item.degree} className="rounded-xl border border-zinc-700/70 bg-zinc-950/35 p-4">
