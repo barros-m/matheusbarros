@@ -22,6 +22,7 @@ npm install
 RESEND_API_KEY="re_your_key"
 CONTACT_FROM_EMAIL="Portfolio Contact <onboarding@resend.dev>"
 CONTACT_TO_EMAIL="your-email@example.com"
+NEXT_PUBLIC_SITE_URL="https://your-domain.com"
 ```
 
 3. Run development server:
