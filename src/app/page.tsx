@@ -75,7 +75,7 @@ export default function HomePage() {
             <div className="flex flex-col justify-center">
               <div className="rounded-lg border border-tech-border bg-tech-darker/80 p-6">
                 <div className="mb-4 font-mono text-xs text-electric-green/70">
-                  // System Status
+                  {"// System Status"}
                 </div>
                 <div className="space-y-3 font-mono text-sm">
                   <div className="flex justify-between">
@@ -107,13 +107,14 @@ export default function HomePage() {
         {/* Metrics Grid */}
         <section className="mb-8">
           <div className="mb-4 font-mono text-xs uppercase tracking-[0.25em] text-electric-cyan/70">
-            // Performance Metrics
+            {"// Performance Metrics"}
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {metrics.map((metric, index) => (
               <article
                 key={metric.label}
-                className={`metric-card hover-lift rounded-lg p-5 animate-fade-up delay-${(index + 1) * 100}`}
+                className="metric-card hover-lift rounded-lg p-5 animate-fade-up"
+                style={{ animationDelay: `${(index + 1) * 100}ms` }}
               >
                 <div className="relative z-10">
                   <div className="metric-number font-display text-4xl font-bold text-white sm:text-5xl">
@@ -136,7 +137,7 @@ export default function HomePage() {
           <div className="mb-6 flex flex-wrap items-end justify-between gap-4 border-b border-tech-border pb-4">
             <div>
               <div className="mb-2 font-mono text-xs uppercase tracking-[0.25em] text-electric-cyan/70">
-                // Career History
+                {"// Career History"}
               </div>
               <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">
                 Experience
@@ -173,7 +174,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="space-y-2.5">
-                  {job.highlights.map((item, i) => (
+                  {job.highlights.map((item) => (
                     <div key={item} className="flex gap-3">
                       <div className="mt-2 flex-none">
                         <div className="flex h-1.5 w-1.5 items-center justify-center">
@@ -196,7 +197,7 @@ export default function HomePage() {
           {/* Skills */}
           <article className="terminal-card diagonal-accent p-6 sm:p-8 animate-fade-up delay-500">
             <div className="mb-2 font-mono text-xs uppercase tracking-[0.25em] text-electric-cyan/70">
-              // Tech Stack
+              {"// Tech Stack"}
             </div>
             <h2 className="font-display mb-6 text-3xl font-bold text-white">
               Core Skills
@@ -226,7 +227,7 @@ export default function HomePage() {
           {/* Education & More */}
           <article className="terminal-card p-6 sm:p-8 animate-fade-up delay-600">
             <div className="mb-2 font-mono text-xs uppercase tracking-[0.25em] text-electric-cyan/70">
-              // Credentials
+              {"// Credentials"}
             </div>
             <h2 className="font-display mb-6 text-2xl font-bold text-white">
               Education
@@ -284,7 +285,7 @@ export default function HomePage() {
           <div className="grid gap-8 lg:grid-cols-[1fr_1.3fr]">
             <aside>
               <div className="mb-2 font-mono text-xs uppercase tracking-[0.25em] text-electric-cyan/70">
-                // Get in Touch
+                {"// Get in Touch"}
               </div>
               <h2 className="font-display text-3xl font-bold text-white sm:text-4xl">
                 Let&apos;s Build Together
