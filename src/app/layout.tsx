@@ -1,23 +1,23 @@
 import type { Metadata } from "next";
-import { Manrope, Syne } from "next/font/google";
+import { JetBrains_Mono, Crimson_Pro } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-sans",
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-mono",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"]
+});
+
+const crimsonPro = Crimson_Pro({
+  variable: "--font-display",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"]
 });
 
-const syne = Syne({
-  variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["500", "600", "700", "800"]
-});
-
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://matheusbarros.com";
-const siteTitle = "Matheus Barros | Senior Software Engineer";
+const siteTitle = "Matheus Barros | Senior Full-Stack Developer";
 const siteDescription =
-  "Portfolio of Matheus Barros - Senior Software Engineer specializing in full-stack development, ETL pipelines, and Azure cloud solutions.";
+  "Senior Full-Stack Developer specializing in React, Angular, .NET, Python, Azure cloud architecture, and enterprise-scale data systems.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Matheus Barros - Senior Software Engineer"
+        alt: "Matheus Barros - Senior Full-Stack Developer"
       }
     ]
   },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable} ${syne.variable} antialiased`}>{children}</body>
+      <body className={`${jetbrainsMono.variable} ${crimsonPro.variable} antialiased`}>{children}</body>
     </html>
   );
 }

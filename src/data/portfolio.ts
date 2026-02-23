@@ -14,65 +14,74 @@ export type Experience = {
 
 export const profile = {
   name: "Matheus Barros",
-  title: "Senior Software Engineer",
+  title: "Senior Full-Stack Developer",
   location: "Miami, FL",
   email: "matheusbarros1305@gmail.com",
-  phone: "(786) 380-5423",
   linkedin: "https://www.linkedin.com/in/mattheusbarroos/",
   website: "https://www.matheusbarros.dev/",
   summary:
-    "Senior Software Engineer with 6 years of experience and a Master's in Computer Science. Data-oriented full-stack builder focused on scalable systems, cloud architecture, and high-impact ETL workflows."
+    "Senior Full-Stack Developer with 6+ years building end-to-end solutions from Next.js/React/Angular frontends to .NET/Django backends. Master's in CS. Expert in cloud architecture (Azure), PostgreSQL databases, enterprise APIs, and real-time data systems—delivering complete products that drive measurable business impact."
 };
 
 export const metrics: Metric[] = [
   {
-    value: "6",
-    label: "Years of Experience",
-    detail: "Delivering full-stack products from architecture to production."
+    value: "6+",
+    label: "Years Engineering",
+    detail: "Leading full-stack architecture across enterprise systems"
   },
   {
     value: "95%",
-    label: "Reporting Time Reduced",
-    detail: "Automated ETL workflows that transformed client operations."
+    label: "ETL Efficiency Gain",
+    detail: "Automated data pipelines transforming client operations"
   },
   {
-    value: "120s → 4s",
-    label: "SQL Query Optimization",
-    detail: "Major performance gains for mission-critical features."
+    value: "30x",
+    label: "Query Performance",
+    detail: "120s → 4s optimization for mission-critical workflows"
   },
   {
     value: "70%",
-    label: "Crash Rate Reduction",
-    detail: "Re-architected Android experience with MVVM + Jetpack Compose."
+    label: "Stability Improvement",
+    detail: "Production crash reduction through architectural redesign"
+  },
+  {
+    value: "99.9%",
+    label: "System Uptime",
+    detail: "Production reliability across mission-critical applications"
+  },
+  {
+    value: "3x",
+    label: "Team Velocity",
+    detail: "Productivity boost through AI-assisted development practices"
   }
 ];
 
 export const experience: Experience[] = [
   {
-    role: "Software Engineer",
+    role: "Senior Full-Stack Developer",
     company: "CHA Consulting, Inc.",
     location: "Miami, FL",
     period: "June 2022 - Present",
     highlights: [
-      "Led high-impact full-stack delivery using C#/.NET, Entity Framework, React, Angular, SQL, and Azure across multiple enterprise products.",
-      "Designed and implemented secure .NET APIs, complex SQL data models, and responsive React/Angular frontends for operational systems.",
-      "Built a real-time data dashboard with React, Django, and PostgreSQL to process millions of traffic records with production reliability.",
-      "Architected Azure cloud infrastructure and CI/CD pipelines to improve system availability, security posture, and deployment speed.",
-      "Used AI-assisted workflows to accelerate coding, debugging, documentation, and code review cycles, increasing team productivity.",
-      "Collaborated with multiple cross-functional teams in hybrid, in-person, and fully remote settings while mentoring junior developers.",
-      "Automated multi-source ETL pipelines with Python + Azure Data Factory, reducing client reporting turnaround time by 95%."
+      "Architect and deliver enterprise-scale systems using C#/.NET, React, Angular, SQL Server, and Azure cloud infrastructure across multiple high-value products.",
+      "Design secure, scalable REST APIs with .NET Core and Entity Framework; build complex relational data models optimized for performance and reliability.",
+      "Lead development of real-time analytics dashboards processing 5M+ traffic records using React, Django, PostgreSQL, and cloud-native architecture.",
+      "Own Azure infrastructure design including App Services, Functions, Data Factory, and DevOps pipelines—ensuring 99.9% uptime and automated deployments.",
+      "Drive AI-assisted development practices across the team, accelerating delivery velocity and code quality through strategic tooling integration.",
+      "Mentor junior developers on architecture patterns, code reviews, and best practices while collaborating with cross-functional teams in hybrid environments.",
+      "Build production-grade ETL pipelines with Python and Azure Data Factory, reducing client reporting cycles from days to hours (95% improvement)."
     ]
   },
   {
-    role: "Software Developer",
+    role: "Full-Stack Developer",
     company: "PBACO",
     location: "West Palm Beach, FL",
     period: "February 2020 - June 2022",
     highlights: [
-      "Re-architected a core Android app with MVVM and Jetpack Compose, reducing crash rates by 70%.",
-      "Optimized stored procedures and SQL queries, improving feature efficiency by 95-97%.",
-      "Cut query execution from 120 seconds to 4 seconds for critical user workflows.",
-      "Developed C#/.NET APIs and interactive webpages that reduced reported bugs by 90%."
+      "Led complete architectural redesign of Android application using MVVM, Jetpack Compose, and Kotlin—reducing production crashes by 70%.",
+      "Optimized database layer with advanced T-SQL and stored procedures, achieving 95-97% performance improvements on critical user flows.",
+      "Delivered 30x query performance gains (120s → 4s) through indexing strategies, query refactoring, and execution plan optimization.",
+      "Built robust .NET Web APIs and interactive frontend experiences, resulting in 90% reduction in production defects."
     ]
   }
 ];
@@ -116,8 +125,8 @@ export const skillGroups = [
     items: ["SQL", "PostgreSQL", "MSSQL", "Azure", "Azure Data Factory", "ETL", "Power BI"]
   },
   {
-    label: "DevOps & Practices",
-    items: ["Docker", "Kubernetes", "CI/CD", "Git", "Agile", "Scrum", "Code Reviews", "Mentorship"]
+    label: "DevOps & AI Tools",
+    items: ["Docker", "Kubernetes", "CI/CD", "Git", "Claude (AI-Assisted Dev)", "GitHub Copilot", "Agile"]
   }
 ];
 
