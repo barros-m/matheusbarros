@@ -38,21 +38,6 @@ export const metrics: Metric[] = [
     value: "30x",
     label: "Query Performance",
     detail: "120s → 4s optimization for mission-critical workflows"
-  },
-  {
-    value: "70%",
-    label: "Stability Improvement",
-    detail: "Production crash reduction through architectural redesign"
-  },
-  {
-    value: "99.9%",
-    label: "System Uptime",
-    detail: "Production reliability across mission-critical applications"
-  },
-  {
-    value: "3x",
-    label: "Team Velocity",
-    detail: "Productivity boost through AI-assisted development practices"
   }
 ];
 
