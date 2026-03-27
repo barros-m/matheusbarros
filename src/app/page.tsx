@@ -62,12 +62,10 @@ export default function HomePage() {
                   Contact
                 </a>
                 <a
-                  href={profile.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="rounded-md border border-tech-border bg-tech-surface/50 px-5 py-2.5 font-mono text-sm font-semibold text-gray-300 transition-all hover:border-electric-blue/40 hover:bg-tech-surface hover:text-electric-blue"
+                  href="/portfolio"
+                  className="rounded-md border border-tech-border bg-tech-surface/50 px-5 py-2.5 font-mono text-sm font-semibold text-gray-300 transition-all hover:border-electric-cyan/40 hover:bg-tech-surface hover:text-electric-cyan"
                 >
-                  LinkedIn →
+                  Portfolio →
                 </a>
               </div>
             </div>

@@ -116,3 +116,75 @@ export const skillGroups = [
 ];
 
 export const languages = ["English (Professional)", "Portuguese (Native)", "Spanish (Conversational)"];
+
+export type ProjectType = "landing-page" | "web-app" | "android-app" | "data-platform" | "api";
+
+export type Project = {
+  title: string;
+  description: string;
+  type: ProjectType;
+  liveUrl?: string;
+  githubUrl?: string;
+  tags: string[];
+  private?: boolean;
+  company?: string;
+};
+
+export const freelanceProjects: Project[] = [
+  {
+    title: "Decora Florida",
+    description:
+      "Landing page for a Miami-based event decoration and party planning company. Covers services from birthday parties to baby showers, with full concept-to-execution planning across Florida.",
+    type: "landing-page",
+    liveUrl: "https://decoraflorida.com",
+    tags: ["React", "Tailwind CSS", "GitHub Pages"]
+  },
+  {
+    title: "Prime House Cleaning",
+    description:
+      "High-converting landing page for a professional house cleaning service in Florida. Features service showcase, pricing tiers, and lead capture form.",
+    type: "landing-page",
+    liveUrl: "https://cleaningservicesprime.com",
+    githubUrl: "https://github.com/barros-m/prime-house-cleaning",
+    tags: ["React", "Tailwind CSS", "GitHub Pages"]
+  },
+  {
+    title: "Bizu Agency",
+    description:
+      "Full website for a creative digital marketing agency offering social media management, content creation, paid media campaigns, and visual design.",
+    type: "landing-page",
+    liveUrl: "https://bizuagency.com",
+    githubUrl: "https://github.com/barros-m/bizu",
+    tags: ["React", "Tailwind CSS", "GitHub Pages"]
+  }
+];
+
+export const privateProjects: Project[] = [
+  {
+    title: "Real-Time Traffic Analytics Dashboard",
+    description:
+      "Enterprise-scale platform processing 5M+ traffic records with real-time analytics, complex filtering, and cloud-native infrastructure.",
+    type: "data-platform",
+    private: true,
+    company: "CHA Consulting, Inc.",
+    tags: ["React", "Django", "PostgreSQL", "Azure", "Python"]
+  },
+  {
+    title: "Enterprise ETL Pipeline System",
+    description:
+      "Automated data pipeline reducing client reporting cycles from days to hours (95% improvement) using cloud-native ETL orchestration.",
+    type: "data-platform",
+    private: true,
+    company: "CHA Consulting, Inc.",
+    tags: ["Azure Data Factory", "Python", "SQL Server", "Azure Functions"]
+  },
+  {
+    title: "Field Operations Android App",
+    description:
+      "Architectural redesign of a doctor notification app that keeps physicians informed of patient status changes in real time.",
+    type: "android-app",
+    private: true,
+    company: "PBACO",
+    tags: ["Kotlin", "Jetpack Compose", "MVVM", ".NET Web API", "T-SQL"]
+  }
+];
