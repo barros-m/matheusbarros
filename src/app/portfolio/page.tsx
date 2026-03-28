@@ -171,8 +171,8 @@ export default function PortfolioPage() {
         </section>
 
         {/* Company Projects */}
-        <section className="terminal-card p-6 sm:p-8 animate-fade-up delay-400">
-          <div className="mb-6 flex flex-wrap items-end justify-between gap-4 border-b border-tech-border pb-4">
+        <section className="mb-8 animate-fade-up delay-400">
+          <div className="mb-4 flex flex-wrap items-end justify-between gap-4">
             <div>
               <div className="mb-1 font-mono text-xs uppercase tracking-[0.25em] text-electric-cyan/70">
                 {"// Professional Work"}

@@ -153,7 +153,7 @@ export const freelanceProjects: Project[] = [
     description:
       "Full website for a creative digital marketing agency offering social media management, content creation, paid media campaigns, and visual design.",
     type: "landing-page",
-    liveUrl: "https://bizuagency.com",
+    liveUrl: "https://barros-m.github.io/bizu/",
     githubUrl: "https://github.com/barros-m/bizu",
     tags: ["React", "Tailwind CSS", "GitHub Pages"]
   }
@@ -163,8 +163,8 @@ export const privateProjects: Project[] = [
   {
     title: "Real-Time Traffic Analytics Dashboard",
     description:
-      "Enterprise-scale platform processing 5M+ traffic records with real-time analytics, complex filtering, and cloud-native infrastructure.",
-    type: "data-platform",
+      "Enterprise-scale web app processing 5M+ traffic records, featuring multiple dashboards with rich data visualizations and advanced filtering options to slice and analyze traffic data across different dimensions.",
+    type: "web-app",
     private: true,
     company: "CHA Consulting, Inc.",
     tags: ["React", "Django", "PostgreSQL", "Azure", "Python"]
@@ -179,7 +179,7 @@ export const privateProjects: Project[] = [
     tags: ["Azure Data Factory", "Python", "SQL Server", "Azure Functions"]
   },
   {
-    title: "Field Operations Android App",
+    title: "SuperDOC 2.0",
     description:
       "Architectural redesign of a doctor notification app that keeps physicians informed of patient status changes in real time.",
     type: "android-app",
