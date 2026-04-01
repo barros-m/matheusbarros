@@ -255,9 +255,16 @@ export default function HomePage() {
             </h3>
             <ul className="space-y-2">
               {certifications.map((item) => (
-                <li key={item} className="flex gap-2 font-mono text-xs text-gray-400">
+                <li key={item.label} className="flex gap-2 font-mono text-xs text-gray-400">
                   <span className="text-electric-cyan">✓</span>
-                  <span>{item}</span>
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="transition-colors hover:text-electric-cyan"
+                  >
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>

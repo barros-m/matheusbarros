@@ -87,10 +87,26 @@ export const education = [
 ];
 
 export const certifications = [
-  "Microsoft Azure Cloud Fundamentals (2024)",
-  "Microsoft Artificial Intelligence Fundamentals (2025)",
-  "Google Agile Fundamentals (2024)",
-  "Docker Foundations Professional Certificate (2026)"
+  {
+    label: "Microsoft Azure Cloud Fundamentals (2024)",
+    url: "https://learn.microsoft.com/en-us/users/matheusbarros-0818/credentials/c8253eb6e8a7c877?ref=https%3A%2F%2Fwww.linkedin.com%2F"
+  },
+  {
+    label: "Microsoft Artificial Intelligence Fundamentals (2025)",
+    url: "https://learn.microsoft.com/en-us/users/matheusbarros-0818/credentials/37709768a56f7bba"
+  },
+  {
+    label: "Google Agile Fundamentals (2024)",
+    url: "https://www.credly.com/badges/a76ee9eb-c2fb-42f2-a0f7-31dc34a71350/linked_in_profile"
+  },
+  {
+    label: "Docker Foundations Professional Certificate (2026)",
+    url: "https://www.linkedin.com/learning/certificates/df355df702e20b97b7048e2e0b4cf4a7e8d0beb2cde4f204c6a565ebb1e2f050"
+  },
+  {
+    label: "Claude AI Development (2025)",
+    url: "https://verify.skilljar.com/c/4dk9upqo8uvw"
+  }
 ];
 
 export const publication =
