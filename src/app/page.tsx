@@ -90,7 +90,7 @@ export default function HomePage() {
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-400">Stack:</span>
-                    <span className="text-white">Next.js • .NET • PostgreSQL</span>
+                    <span className="text-white">React • .NET • SQL</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-400">Education:</span>

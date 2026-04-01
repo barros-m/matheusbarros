@@ -172,13 +172,31 @@ export const privateProjects: Project[] = [
     tags: [".NET Web API", "React", "Bootstrap", "C#", "SQL Server", "CI/CD","Architecture Lead"]
   },
   {
+    title: "Controller Timing Request System",
+    description:
+      "Web app to digitize and manage Controller Timing Requests (CTR), including a structured approval workflow. Led development of key modules and coordinated across teams.",
+    type: "web-app",
+    private: true,
+    company: "CHA Consulting, Inc.",
+    tags: ["Angular", "TypeScript", ".NET Core", "MSSQL", "CI/CD"]
+  },
+  {
+    title: "Work Order Scheduling Platform",
+    description:
+      "Web app for managing and prioritizing work orders, featuring scheduling tools, metrics dashboards, and visual planning views. Joined in later phases — introduced Entity Framework, built key features, and established development best practices for the team.",
+    type: "web-app",
+    private: true,
+    company: "CHA Consulting, Inc.",
+    tags: ["Blazor", ".NET Core", "C#", "Entity Framework", "MSSQL"]
+  },
+  {
     title: "Real-Time Traffic Analytics Dashboard",
     description:
       "Enterprise-scale web app processing 5M+ traffic records, featuring multiple dashboards with rich data visualizations and advanced filtering options to slice and analyze traffic data across different dimensions.",
     type: "web-app",
     private: true,
     company: "CHA Consulting, Inc.",
-    tags: ["React", "Django", "PostgreSQL", "Azure", "Python"]
+    tags: ["React", "Django", "PostgreSQL", "Azure", "Python", "Mapbox GL"]
   },
   {
     title: "Enterprise ETL Pipeline System",
