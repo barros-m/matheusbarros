@@ -49,7 +49,7 @@ export const experience: Experience[] = [
     period: "June 2022 - Present",
     highlights: [
       "Architect and deliver enterprise-scale systems using C#/.NET, React, Angular, SQL Server, and Azure cloud infrastructure across multiple high-value products.",
-      "Design secure, scalable REST APIs with .NET Core and Entity Framework; build complex relational data models optimized for performance and reliability.",
+      "Design secure, scalable REST APIs with .NET and Entity Framework; build complex relational data models optimized for performance and reliability.",
       "Lead development of real-time analytics dashboards processing 5M+ traffic records using React, Django, PostgreSQL, and cloud-native architecture.",
       "Own Azure infrastructure design including App Services, Functions, Data Factory, and DevOps pipelines—ensuring 99.9% uptime and automated deployments.",
       "Drive AI-assisted development practices across the team, accelerating delivery velocity and code quality through strategic tooling integration.",
@@ -103,7 +103,7 @@ export const skillGroups = [
   },
   {
     label: "Backend",
-    items: ["C#", ".NET Core", "Python", "Django", "Java", "Kotlin", "REST APIs"]
+    items: ["C#", ".NET", "Python", "Django", "Java", "Kotlin", "REST APIs"]
   },
   {
     label: "Data & Cloud",
@@ -128,11 +128,12 @@ export type Project = {
   tags: string[];
   private?: boolean;
   company?: string;
+  featured?: boolean;
 };
 
 export const freelanceProjects: Project[] = [
   {
-    title: "Decora Florida",
+    title: "DeCora Florida",
     description:
       "Landing page for a Miami-based event decoration and party planning company. Covers services from birthday parties to baby showers, with full concept-to-execution planning across Florida.",
     type: "landing-page",
@@ -161,6 +162,16 @@ export const freelanceProjects: Project[] = [
 
 export const privateProjects: Project[] = [
   {
+    title: "Built Asset Intelligence Platform",
+    description:
+      "Enterprise platform helping organizations track, analyze, and plan maintenance across their physical assets — covering investment opportunities, energy usage, carbon footprint, and sustainability metrics. Led architecture and development end-to-end.",
+    type: "web-app",
+    private: true,
+    featured: true,
+    company: "CHA Consulting, Inc.",
+    tags: [".NET Web API", "React", "Bootstrap", "C#", "SQL Server", "CI/CD","Architecture Lead"]
+  },
+  {
     title: "Real-Time Traffic Analytics Dashboard",
     description:
       "Enterprise-scale web app processing 5M+ traffic records, featuring multiple dashboards with rich data visualizations and advanced filtering options to slice and analyze traffic data across different dimensions.",
@@ -176,15 +187,15 @@ export const privateProjects: Project[] = [
     type: "data-platform",
     private: true,
     company: "CHA Consulting, Inc.",
-    tags: ["Azure Data Factory", "Python", "SQL Server", "Azure Functions"]
+    tags: ["Azure Data Factory", "Python", "SQL Server", "Azure Functions", "PostgreSQL"]
   },
   {
     title: "SuperDOC 2.0",
     description:
-      "Architectural redesign of a doctor notification app that keeps physicians informed of patient status changes in real time.",
+      "Architectural redesign of a doctor management app that keeps physicians informed of patient status changes in real time.",
     type: "android-app",
     private: true,
     company: "PBACO",
-    tags: ["Kotlin", "Jetpack Compose", "MVVM", ".NET Web API", "T-SQL"]
+    tags: ["Kotlin", "Jetpack Compose", "MVVM", ".NET Web API", "T-SQL", "HIPAA"]
   }
 ];

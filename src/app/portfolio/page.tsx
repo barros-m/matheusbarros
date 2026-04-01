@@ -108,6 +108,7 @@ function ProjectCard({ project }: { project: Project }) {
   );
 }
 
+
 export default function PortfolioPage() {
   return (
     <main className="relative min-h-screen pb-20 pt-8">
