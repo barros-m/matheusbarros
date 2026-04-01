@@ -55,16 +55,16 @@ export default function HomePage() {
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
-                  href={`mailto:${profile.email}`}
-                  className="group rounded-md border border-electric-cyan/40 bg-electric-cyan/10 px-5 py-2.5 font-mono text-sm font-semibold text-electric-cyan transition-all hover:bg-electric-cyan/20 hover:shadow-glow"
-                >
-                  <span className="mr-2">›</span>
-                  Contact
-                </a>
-                <a
                   href="/portfolio"
-                  className="rounded-md border border-tech-border bg-tech-surface/50 px-5 py-2.5 font-mono text-sm font-semibold text-gray-300 transition-all hover:border-electric-cyan/40 hover:bg-tech-surface hover:text-electric-cyan"
+                  className="group relative overflow-hidden rounded-md border border-electric-cyan/40 bg-electric-cyan/10 px-5 py-2.5 font-mono text-sm font-semibold text-electric-cyan transition-all hover:bg-electric-cyan/20 hover:shadow-glow"
                 >
+                  <span
+                    className="pointer-events-none absolute inset-0 -translate-x-full"
+                    style={{
+                      background: "linear-gradient(90deg, transparent 0%, rgba(0,217,255,0.15) 50%, transparent 100%)",
+                      animation: "shimmer 3s ease-in-out infinite"
+                    }}
+                  />
                   Portfolio →
                 </a>
               </div>
@@ -111,20 +111,18 @@ export default function HomePage() {
             {metrics.map((metric, index) => (
               <article
                 key={metric.label}
-                className="metric-card hover-lift rounded-lg p-5 animate-fade-up"
+                className="hover-lift rounded-lg border border-electric-cyan/20 bg-gradient-to-br from-[rgba(20,24,37,0.8)] to-[rgba(10,14,26,0.95)] p-5 animate-fade-up"
                 style={{ animationDelay: `${(index + 1) * 100}ms` }}
               >
-                <div className="relative z-10">
-                  <div className="metric-number font-display text-4xl font-bold text-white sm:text-5xl">
-                    {metric.value}
-                  </div>
-                  <h3 className="mt-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-electric-cyan/80">
-                    {metric.label}
-                  </h3>
-                  <p className="mt-3 font-mono text-xs leading-relaxed text-gray-400">
-                    {metric.detail}
-                  </p>
+                <div className="metric-number font-display text-4xl font-bold text-white sm:text-5xl">
+                  {metric.value}
                 </div>
+                <h3 className="mt-2 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-electric-cyan/80">
+                  {metric.label}
+                </h3>
+                <p className="mt-3 font-mono text-xs leading-relaxed text-gray-400">
+                  {metric.detail}
+                </p>
               </article>
             ))}
           </div>
